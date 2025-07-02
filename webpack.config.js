@@ -35,6 +35,10 @@ Encore
       'shop',
       [common_controllers, path.resolve(__dirname, './assets/shop/controllers.json')]
     ))
+    .copyFiles({
+      from: './assets/shop/images',
+      to: 'images/[path][name].[ext]'
+    })
 ;
 
 const appShopConfig = Encore.getWebpackConfig();
