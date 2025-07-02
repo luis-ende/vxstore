@@ -23,6 +23,9 @@
     ],
     "require": {
         "php": "^8.2",
+        "friendsofsylius/sylius-import-export-plugin": "^0.28.0",
+        "portphp/csv": "^2.0",
+        "portphp/spreadsheet": "^1.0",
         "sylius/mollie-plugin": "^3.0",
         "sylius/paypal-plugin": "^2.0",
         "sylius/sylius": "^2.1",
