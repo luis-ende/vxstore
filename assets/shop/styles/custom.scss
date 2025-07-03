@@ -1,0 +1,36 @@
+/* assets/admin/styles/custom.scss */
+
+* {
+    --bs-btn-bg: #9900ff !important;              // All buttons
+    --bs-btn-color: rgb(255, 255, 255) !important;
+    --bs-btn-hover-color: rgb(255, 255, 255) !important;
+    --bs-btn-hover-bg: #ff00ff !important;        // Button hover state
+    --bs-btn-border-color: #9900ff !important;
+    --bs-btn-hover-border-color: #ff00ff !important;
+
+    --bs-primary-rgb: 153, 0, 255;                   // RGB fallback
+    --bs-primary: #9900ff;                         // Primary theme color
+
+    --bs-link-color-rgb: 153, 0, 255;                // Link RGB
+    --bs-link-color: #9900ff !important;           // Link color (non-underlined)
+    --bs-link-hover-color: #ff00ff !important;     // Link hover color
+    --bs-link-hover-color-rgb: 255, 0, 255 !important;
+
+    --bs-navbar-hover-color: #ff00ff;              // Navbar hover links
+    --bs-navbar-active-color: #ff00ff;             // Navbar active link
+}
+
+a {
+    text-decoration: none !important;
+    &:not(.btn) {
+        color: #9900ff !important;
+        text-decoration: none;
+    }
+}
+
+a:hover {
+    text-decoration: none !important;
+    &:not(.btn) {
+        color: #ff00ff !important;
+    }
+}
