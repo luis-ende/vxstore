@@ -1,3 +1,6 @@
 sylius:
     ui:
         your_store: 'VX Store'
+    homepage:
+        latest_deals: 'Ofertas más recientes'
+        new_collection: 'Nuevos'
