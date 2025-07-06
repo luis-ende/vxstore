@@ -296,7 +296,7 @@ sylius_twig_hooks:
                 template: '@SyliusShop/homepage/new_collection.html.twig'
                 priority: 100
             latest_products:
-                component: 'sylius_shop:product:list'
+                component: 'Product:ListByTaxonComponent'
                 props:
                     limit: 8
                     template: '@SyliusShop/product/common/list.html.twig'

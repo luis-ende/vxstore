@@ -1,6 +1,35 @@
 sylius:
     ui:
         your_store: 'VX Store'
+        contact_us: 'Envíanos un mensaje'
+        use_the_contact_form_below_to_send_us_a_message: '¿Tienes dudas? Utiliza el siguiente formulario para mandarnos tu mensaje y en breve nos pondremos en contacto.'
+        thank_you_for_registration: 'Gracias por registrarte en VX Store'
+        verify_email_address: 'Revisa tu correo electrónico y verifica tu dirección'
+        manage_your_personal_information_and_preferences: 'Administra tu información personal y preferencias'
+        set_a_new_password_for_your_account: 'Establecer una nueva contraseña para tu cuenta'
+        manage_your_saved_addresses: 'Administra tus direcciones guardadas'
+        browse_your_orders_from_the_past: 'Ver tus pedidos anteriores'
+        add_your_review: 'Agrega tu reseña'
+        latest_products: 'Colección Final Fantasy'
+        placed_an_order: 'Has realizado correctamente un pedido.'
+        summary_of_your_order: 'Resumen de tu pedido'
+        out_of_stock: 'Vendido'
+        edit_your_items_apply_coupon_or_proceed_to_the_checkout: 'Editar tus artículos, aplicar cupón o proceder con el pedido'
+        enter_your_code: 'Introduce tu código'
+        you_may_also_like: 'También te podría interesar'
+        your_cart_is_empty: 'Tu carrito está vacío'
+        forgot_password: '¿Olvidaste tu contraseña?'
+        sign_in_here: 'Inicia sesión aquí'
     homepage:
         latest_deals: 'Ofertas más recientes'
         new_collection: 'Nuevos'
+    account:
+        dont_have_an_account: "¿No tienes una cuenta?"
+        register_here: 'Regístrate'
+    form:
+        login:
+            username: 'Nombre de usuario'
+            password: 'Contraseña'        
+    review:            
+        rating:
+            not_blank: 'Por favor califica la reseña.'            

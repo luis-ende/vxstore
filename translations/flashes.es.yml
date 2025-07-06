@@ -1,0 +1,8 @@
+# This file is part of the Sylius package.
+# (c) Sylius Sp. z o.o.
+
+sylius:
+    customer:
+        register: 'Gracias por registrarte, consulta su dirección de email para verificar tu cuenta.'
+    review:
+        wait_for_the_acceptation: 'Tu reseña está a la espera de ser revisada.'

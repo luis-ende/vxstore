@@ -2,11 +2,15 @@
 
 * {
     --bs-btn-bg: #9900ff !important;              // All buttons
-    --bs-btn-color: rgb(255, 255, 255) !important;
-    --bs-btn-hover-color: rgb(255, 255, 255) !important;
+    &:not(.btn-transparent) {
+        --bs-btn-color: rgb(255, 255, 255) !important;
+        --bs-btn-hover-color: rgb(255, 255, 255) !important;
+    }
     --bs-btn-hover-bg: #ff00ff !important;        // Button hover state
     --bs-btn-border-color: #9900ff !important;
     --bs-btn-hover-border-color: #ff00ff !important;
+    --bs-btn-active-bg: #ff00ff !important;
+    --bs-btn-active-color: rgb(255, 255, 255) !important;
 
     --bs-pagination-active-color: #ff00ff !important;
     --bs-pagination-active-border-color: #ff00ff !important;
