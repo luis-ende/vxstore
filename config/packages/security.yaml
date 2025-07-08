@@ -121,13 +121,14 @@ security:
 
         - { path: "%sylius.security.admin_regex%", role: ROLE_ADMINISTRATION_ACCESS }
         - { path: "%sylius.security.shop_regex%/account", role: ROLE_USER }
+        - { path: "%sylius.security.shop_regex%/checkout", role: ROLE_USER }
 
         - { path: "%sylius.security.api_admin_route%/administrators/reset-password", role: PUBLIC_ACCESS }
         - { path: "%sylius.security.api_admin_regex%/.*", role: ROLE_API_ACCESS }
         - { path: "%sylius.security.api_admin_route%/administrators/token", role: PUBLIC_ACCESS }
         - { path: "%sylius.security.api_shop_account_regex%/.*", role: ROLE_USER }
         - { path: "%sylius.security.api_shop_route%/customers/token", role: PUBLIC_ACCESS }
-        - { path: "%sylius.security.api_shop_regex%/.*", role: PUBLIC_ACCESS }
+        - { path: "%sylius.security.api_shop_regex%/.*", role: PUBLIC_ACCESS }        
 
 when@test: &security_test
     security:
