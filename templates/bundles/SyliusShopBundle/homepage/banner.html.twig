@@ -1,10 +1,27 @@
 <div class="mb-6" role="banner" aria-label="{{ 'sylius.ui.home'|trans }}">
     <div class="overflow-hidden">
+        {% set randomImageId = random(1, 3) %}
+        {% set imageAsset = 'images/social-preview_' ~ randomImageId ~ '.png' %}
         <div class="d-flex justify-content-center align-items-center position-relative">
-            <div class="pt-4" style="text-align: center;">
-                <div class="fs-5 pb-2">¡Gracias por visitar <strong>VX Store</strong>!</div>
-                <div class="fs-6">Si te interesa alguno de nuestros artículos, no dudes en <a href="{{ path('sylius_shop_contact_request') }}">contactarnos</a> para obtener más información sobre las condiciones de venta y entrega.</div>
-                <div class="fs-6">Todos los artículos son de <strong>segunda mano</strong> pero en perfecto estado :)</div>
+            <div class="pt-4"
+                 style="
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     width: 100%;
+                    height: 460px;
+                    text-align: center;
+                    background-image: url({{ absolute_url(asset(imageAsset)) }});
+                    background-color: rgba(255, 255, 255, 0.5);
+                    background-blend-mode: hard-light;
+                    background-size: cover;
+                    background-position: top;
+                    color: whitesmoke">
+                <div class="p-2" style="width: 100%; height: 100px;">
+                    <div class="fs-5 pb-2">¡Gracias por visitar <strong>VX Store</strong>!</div>
+                    <div class="fs-6">Si te interesa alguno de nuestros artículos, no dudes en <a href="{{ path('sylius_shop_contact_request') }}">contactarnos</a> para obtener más información sobre las condiciones de venta y entrega.</div>
+                    <div class="fs-6 pb-4">Todos los artículos son de <strong>segunda mano</strong> pero en perfecto estado :)</div>
+                </div>
             </div>
         </div>
     </div>
