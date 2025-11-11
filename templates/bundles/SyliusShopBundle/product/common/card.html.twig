@@ -1,0 +1,8 @@
+<div {{ sylius_test_html_attribute('product', '%s'|format(product.code)) }} >
+    {% hook 'card' with {_prefixes: hookable_metadata.prefixes|default([])|merge(['sylius_shop.shared.product'])} %}
+    {% if product.enabledVariants.empty() or product.simple and not sylius_inventory_is_available(product.enabledVariants.first) %}
+        <div {{ sylius_test_html_attribute('product-out-of-stock') }}>
+            <span class="out-of-stock-highlight">VENDIDO</span>
+        </div>
+    {% endif %}
+</div>
