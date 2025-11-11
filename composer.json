@@ -23,6 +23,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "doctrine/cache": "^1.11",
         "friendsofsylius/sylius-import-export-plugin": "^0.28.0",
         "portphp/csv": "^2.0",
         "portphp/spreadsheet": "^1.0",
