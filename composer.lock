@@ -17553,16 +17553,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "41600c8379eb5aee63e9413fe9e97273e25d57e4"
-            },
+            "version": "2.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/41600c8379eb5aee63e9413fe9e97273e25d57e4",
-                "reference": "41600c8379eb5aee63e9413fe9e97273e25d57e4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f20ce6f3c82556cfcfc086b152445a12d1d64fff",
+                "reference": "f20ce6f3c82556cfcfc086b152445a12d1d64fff",
                 "shasum": ""
             },
             "require": {
@@ -17584,6 +17579,17 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Mirtes"
+                },
+                {
+                    "name": "Markus Staab"
+                },
+                {
+                    "name": "Vincent Langlet"
+                }
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
             "keywords": [
@@ -17607,7 +17613,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-04T19:17:37+00:00"
+            "time": "2026-10-28T22:38:53+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
@@ -18391,31 +18397,78 @@
             "time": "2024-05-31T13:43:32+00:00"
         },
         {
-            "name": "rector/rector",
-            "version": "2.1.4",
+            "name": "rector/extension-installer",
+            "version": "0.11.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rectorphp/rector.git",
-                "reference": "fe613c528819222f8686a9a037a315ef9d4915b3"
+                "url": "https://github.com/rectorphp/extension-installer.git",
+                "reference": "05544e9b195863b8571ae2a3b903cbec7fa062e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/fe613c528819222f8686a9a037a315ef9d4915b3",
-                "reference": "fe613c528819222f8686a9a037a315ef9d4915b3",
+                "url": "https://api.github.com/repos/rectorphp/extension-installer/zipball/05544e9b195863b8571ae2a3b903cbec7fa062e0",
+                "reference": "05544e9b195863b8571ae2a3b903cbec7fa062e0",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "composer/xdebug-handler": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "rector/phpstan-rules": "^0.4",
+                "rector/rector-src": "dev-main",
+                "symplify/easy-coding-standard": "^10.0",
+                "symplify/phpstan-extensions": "^10.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Rector\\RectorInstaller\\Plugin",
+                "branch-alias": {
+                    "dev-main": "0.11.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rector\\RectorInstaller\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Composer plugin for automatic installation of Rector extensions",
+            "support": {
+                "issues": "https://github.com/rectorphp/extension-installer/issues",
+                "source": "https://github.com/rectorphp/extension-installer/tree/0.11.2"
+            },
+            "time": "2022-01-19T00:29:14+00:00"
+        },
+        {
+            "name": "rector/rector",
+            "version": "2.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector.git",
+                "reference": "12ddb68d34acb91bcf3d00302bf1c7c1b5840bd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/12ddb68d34acb91bcf3d00302bf1c7c1b5840bd6",
+                "reference": "12ddb68d34acb91bcf3d00302bf1c7c1b5840bd6",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "phpstan/phpstan": "^2.1.18"
+                "phpstan/phpstan": "^2.3.4"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
                 "rector/rector-downgrade-php": "*",
                 "rector/rector-phpunit": "*",
                 "rector/rector-symfony": "*"
-            },
-            "suggest": {
-                "ext-dom": "To manipulate phpunit.xml via the custom-rule command"
             },
             "bin": [
                 "bin/rector"
@@ -18440,7 +18493,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.1.4"
+                "source": "https://github.com/rectorphp/rector/tree/2.8.3"
             },
             "funding": [
                 {
@@ -18448,7 +18501,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-15T14:41:36+00:00"
+            "time": "2026-10-29T05:51:41+00:00"
         },
         {
             "name": "robertfausk/behat-panther-extension",
@@ -19786,24 +19839,24 @@
         },
         {
             "name": "sylius/sylius-rector",
-            "version": "v3.3.0",
+            "version": "v3.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusRector.git",
-                "reference": "5ed4f4d369e6fbaa9b590bc9dd006956e96767a5"
+                "reference": "8d037883d602452f1b325b5d4877725e97be87c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusRector/zipball/5ed4f4d369e6fbaa9b590bc9dd006956e96767a5",
-                "reference": "5ed4f4d369e6fbaa9b590bc9dd006956e96767a5",
+                "url": "https://api.github.com/repos/Sylius/SyliusRector/zipball/8d037883d602452f1b325b5d4877725e97be87c8",
+                "reference": "8d037883d602452f1b325b5d4877725e97be87c8",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.0",
-                "rector/rector": "^2.0.7"
+                "rector/extension-installer": "~0.11",
+                "rector/rector": "^2.6"
             },
             "conflict": {
-                "rector/rector": "<0.11",
                 "symplify/phpstan-rules": "^11.1"
             },
             "require-dev": {
@@ -19813,7 +19866,6 @@
                 "phpstan/phpstan-webmozart-assert": "^2.0.0",
                 "phpunit/phpunit": "^10.5.44",
                 "symplify/easy-coding-standard": "^12.5.1",
-                "symplify/package-builder": "^11.3.2",
                 "symplify/phpstan-extensions": "^12.0.1",
                 "symplify/phpstan-rules": "^14.2.7",
                 "symplify/rule-doc-generator": "^12.2.5",
@@ -19843,7 +19895,7 @@
             "description": "Rector upgrades rules for Sylius",
             "support": {
                 "issues": "https://github.com/Sylius/SyliusRector/issues",
-                "source": "https://github.com/Sylius/SyliusRector/tree/v3.3.0"
+                "source": "https://github.com/Sylius/SyliusRector/tree/v3.9.0"
             },
             "funding": [
                 {
@@ -19851,7 +19903,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-29T09:59:16+00:00"
+            "time": "2026-09-04T08:32:01+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -20528,5 +20580,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
